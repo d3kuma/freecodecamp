@@ -1,8 +1,24 @@
-*{
-    font-family: 'Poppins', sans-serif;
-    margin: 0 auto;
-    width: 80%;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+
+
+body{
+    margin: 0;
+    background-color: #535291;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: white;
+    margin: 0;
+}
+
+
 
 h1, p{
     text-align: center;
@@ -13,24 +29,77 @@ p{
 }
 
 label{
-    display: block;
+    display: flex;
+    align-items: center;
     margin: 0.5rem 1rem;
-    /* text-align: left; */
+    text-align: left;
 }
 
-input, textarea, select{
+fieldset{
+    border: none;
+    text-align: left;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button{
+    background-color: #37AF65;
+    font-weight: bold;
+    margin-top: 30px;
+    padding: 12px;
     width: 100%;
-    margin: 10 0 0 0;
-    min-height: 2em;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    font-size: 1rem;
+}
+
+form {
+    background: var(--color-darkblue-alpha);
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
+  }
+
+
+button:hover{
+    cursor: pointer;
+}
+
+.form-container{
+    background-color: #272746;
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
+
+}
+
+.inline{
+    width: unset;
+    margin: 0em 0.5em 0em 0em;
+    vertical-align: middle;
 }
 
 .container{
-    background-color: #272746;
-    width: 80%;
-    max-width: 500px;
-    text-align: center;
-    color: white;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
 }
+
+/* responsividade com a div */
+@media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
