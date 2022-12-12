@@ -4,6 +4,10 @@ html{
     font-size: 16px;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 .label{
     border: 2px solid black;
     width: 270px;
@@ -13,4 +17,23 @@ html{
 
 body{
     font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin: -4 0;
+    letter-spacing: 0.15px;
+}
+
+.divider{
+    border-bottom: 1px solid #888989;
+    margin: 2px 0;
+}
+
+p{
+    margin: 0;
+}
+
+.bold{
+    font-weight: 800;
 }
