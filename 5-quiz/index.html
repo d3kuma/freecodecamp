@@ -39,10 +39,13 @@
                     <p>1</p>
                     <fieldset class="question" name="question-one">
                         <legend>
-                            The legend element represents a caption for the content of its parent fieldset element                        </legend>
+                            The legend element represents a caption for the content of its parent fieldset element
+                        </legend>
                         <ul class="answers-list">
-                            <li><label for="q1-a1"><input type="radio" name="" id="q1-a1" value="true" name="q1"> True</label></li>
-                            <li><label for="q1-a2"><input type="radio" name="" id="q1-a2" value="false" name="q1"> False</label></li>
+                            <li><label for="q1-a1"><input type="radio" name="" id="q1-a1" value="true" name="q1">
+                                    True</label></li>
+                            <li><label for="q1-a2"><input type="radio" name="" id="q1-a2" value="false" name="q1">
+                                    False</label></li>
                         </ul>
                     </fieldset>
                 </div>
@@ -54,8 +57,10 @@
                             for attribute with the same value as the input's id
                         </legend>
                         <ul class="answers-list">
-                            <li><label for="q2-a1"><input type="radio" name="" id="q2-a1" value="true" name="q2"> True</label></li>
-                            <li><label for="q2-a2"><input type="radio" name="" id="q2-a2" value="false" name="q2"> False</label></li>
+                            <li><label for="q2-a1"><input type="radio" name="" id="q2-a1" value="true" name="q2">
+                                    True</label></li>
+                            <li><label for="q2-a2"><input type="radio" name="" id="q2-a2" value="false" name="q2">
+                                    False</label></li>
                         </ul>
                     </fieldset>
                 </div>
@@ -64,8 +69,32 @@
                 <h2 id="css-questions">CSS Questions</h2>
             </section>
             <input type="submit" value="">
+            <div class="formrow">
+                <div class="question-block"><label for="customer">Are you a frontend developer?</label></div>
+                <div class="answer">
+                    <select name="" id="customer" name="customer" required>
+                        <option value="">Select an option</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <div class="question-block"><label for="questions">Do you have any questions:</label></div>
+                <div class="answer">
+                    <textarea name="questions" id="questions" cols="5" rows="24"
+                        placeholder="Who is flexbox..."></textarea>
+                </div>
+            </div>
+            <input type="submit" value="Send">
         </form>
     </main>
+    <footer>
+        <address>
+            <a href="https://freecodecamp.org">freeCodeCamp</a><br />
+            San Francisco<br />
+            California<br />
+            USA
+        </address>
+    </footer>
 </body>
 
 </html>
